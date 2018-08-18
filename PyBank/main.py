@@ -51,7 +51,8 @@ with open (file_path, 'r',newline='') as csv_file:
         
         if ( i == int(min_index)):
             min_month = month[i]
-
+print('Financial Analysis')
+print('--------------------------------')
 print(f'Total Months : {total_months}')
 print(f'Total : ${total_profit}')
 print(f'Average Change : ${avg_difference}')
@@ -60,7 +61,8 @@ print(f'Greatest Decrease in Profits: {min_month} $({min_change})')
 
 
 with open(output_path,'w') as output_file:
-    print(f'Here are the results of the analysis', file=output_file)
+    print(f'Financial Analysis', file=output_file)
+    print('--------------------------------',file=output_file)
     print(f'Total Months : {total_months}', file=output_file)
     print(f'Total : ${total_profit}',file=output_file)
     print(f'Average Change : ${avg_difference}',file=output_file)
